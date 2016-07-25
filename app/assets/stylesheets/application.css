@@ -12,4 +12,8 @@
  *
  *= require_tree .
  *= require_self
+
+ *required font awesome for icons and such!
+ *= require font-awesome
+
  */
