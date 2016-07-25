@@ -47,6 +47,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Package for spina
+# After install run, "rails g spina:install" and follow the prompts.
 gem 'globalize', github: 'globalize/globalize'
 gem 'spina-template', github: 'denkGroot/Spina-template'
 gem 'spina', github: 'denkGroot/Spina'
+
+#
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
