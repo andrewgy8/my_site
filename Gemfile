@@ -61,4 +61,3 @@ gem 'better_errors', '~> 2.1', '>= 2.1.1'
 # Use for bootstrap Grayscale template icons, required in the application.css file.
 gem 'font-awesome-rails'
 
-gem 'google-webfonts-rails'

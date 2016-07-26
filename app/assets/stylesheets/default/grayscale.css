@@ -146,6 +146,9 @@ a:focus {
     height: 100%;
     padding: 0;
   }
+  .intro-body {
+    height: 75vw;
+  }
   .intro .intro-body .brand-heading {
     font-size: 100px;
   }
