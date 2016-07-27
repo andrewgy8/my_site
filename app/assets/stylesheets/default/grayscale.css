@@ -26,13 +26,13 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
-p {
+p, p+div {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
-  p {
+  p, p+div {
     margin: 0 0 35px;
     font-size: 20px;
     line-height: 1.6;
