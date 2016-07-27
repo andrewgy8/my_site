@@ -11,12 +11,16 @@
     name:           'portfolio',          
     title:          'Portfolio',
     partable_type:  'Spina::Text'
+  }, {
+    name:           'projects',
+    title:          'Projects',
+    partable_type:  'Spina::Text' 
     }]
 
   theme.view_templates = [{
     name:       'homepage',
     title:      'Homepage',               #name of template
-    page_parts: ['skills', 'portfolio']   #which page_parts would you like to display in the cms
+    page_parts: ['skills', 'portfolio', 'projects']   #which page_parts would you like to display in the cms
   }, {
     name: 'show',
     title:        'Default',
