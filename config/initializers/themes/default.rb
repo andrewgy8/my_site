@@ -4,19 +4,19 @@
   theme.title = 'Default Theme'
 
   theme.page_parts = [{
-    name:           'text',
-    title:          'Text',
-    partable_type:  'Spina::Text'
+    name:           'skills',             #changes the name of the variable used to render text
+    title:          'Skills Description', #changes the name in spina of the text box
+    partable_type:  'Spina::Text'         #type of input for the cms template
   }, {
-    name:           'portfolio',
+    name:           'portfolio',          
     title:          'Portfolio',
     partable_type:  'Spina::Text'
     }]
 
   theme.view_templates = [{
     name:       'homepage',
-    title:      'Homepage',
-    page_parts: ['text']
+    title:      'Homepage',               #name of template
+    page_parts: ['skills', 'portfolio']   #which page_parts would you like to display in the cms
   }, {
     name: 'show',
     title:        'Default',
@@ -26,7 +26,7 @@
   }]
 
   theme.custom_pages = [{
-    name:           'homepage',
+    name:           'homepage',           #used for the display of custom templates in the cms template
     title:          'Homepage',
     deletable:      false,
     view_template:  'homepage'
