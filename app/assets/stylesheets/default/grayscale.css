@@ -315,3 +315,18 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+
+/*------------CUSTOM CSS------------ */
+
+#dev-icons-container {
+
+}
+
+.dev-icons {
+  display: inline;
+  margin: auto;
+  width: 120px;
+  height: auto;
+}
+
+
