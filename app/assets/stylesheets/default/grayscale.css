@@ -223,12 +223,13 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
+.projects-section {
   width: 100%;
   padding: 50px 0;
   color: white;
   background: url(downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  /*changed to white to get image to show up*/
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -243,7 +244,7 @@ a:focus {
   .content-section {
     padding-top: 250px;
   }
-  .download-section {
+  .projects-section {
     padding: 100px 0;
   }
   #map {
