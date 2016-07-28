@@ -124,7 +124,8 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(intro-bg.jpg) no-repeat bottom center scroll;
+  /*use image-url for heroku hash that is added to the end of the file name for cache-busting */
+  background: image-url('intro-bg.jpg') no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -227,7 +228,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: white;
-  background: url(downloads-bg.jpg) no-repeat center center scroll;
+  background: image-url('downloads-bg.jpg') no-repeat center center scroll;
 
   /*changed to white to get image to show up*/
   background-color: white;

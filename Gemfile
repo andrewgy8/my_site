@@ -36,7 +36,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+
 group :production, :staging do
+  # Getting grayscale bootstrap working on heroku
   gem 'rails_12factor'
 end
 
