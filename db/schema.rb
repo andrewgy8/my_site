@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20160724163919) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "spina_accounts", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
@@ -66,8 +69,8 @@ ActiveRecord::Schema.define(version: 20160724163919) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.string   "content"
-    t.index ["locale"], name: "index_spina_line_translations_on_locale"
-    t.index ["spina_line_id"], name: "index_spina_line_translations_on_spina_line_id"
+    t.index ["locale"], name: "index_spina_line_translations_on_locale", using: :btree
+    t.index ["spina_line_id"], name: "index_spina_line_translations_on_spina_line_id", using: :btree
   end
 
   create_table "spina_lines", force: :cascade do |t|
@@ -96,8 +99,8 @@ ActiveRecord::Schema.define(version: 20160724163919) do
     t.string   "description"
     t.string   "seo_title"
     t.string   "materialized_path"
-    t.index ["locale"], name: "index_spina_page_translations_on_locale"
-    t.index ["spina_page_id"], name: "index_spina_page_translations_on_spina_page_id"
+    t.index ["locale"], name: "index_spina_page_translations_on_locale", using: :btree
+    t.index ["spina_page_id"], name: "index_spina_page_translations_on_spina_page_id", using: :btree
   end
 
   create_table "spina_pages", force: :cascade do |t|
@@ -151,7 +154,7 @@ ActiveRecord::Schema.define(version: 20160724163919) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["structure_id"], name: "index_spina_structure_items_on_structure_id"
+    t.index ["structure_id"], name: "index_spina_structure_items_on_structure_id", using: :btree
   end
 
   create_table "spina_structure_parts", force: :cascade do |t|
@@ -162,8 +165,8 @@ ActiveRecord::Schema.define(version: 20160724163919) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["structure_item_id"], name: "index_spina_structure_parts_on_structure_item_id"
-    t.index ["structure_partable_id"], name: "index_spina_structure_parts_on_structure_partable_id"
+    t.index ["structure_item_id"], name: "index_spina_structure_parts_on_structure_item_id", using: :btree
+    t.index ["structure_partable_id"], name: "index_spina_structure_parts_on_structure_partable_id", using: :btree
   end
 
   create_table "spina_structures", force: :cascade do |t|
@@ -177,8 +180,8 @@ ActiveRecord::Schema.define(version: 20160724163919) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.text     "content"
-    t.index ["locale"], name: "index_spina_text_translations_on_locale"
-    t.index ["spina_text_id"], name: "index_spina_text_translations_on_spina_text_id"
+    t.index ["locale"], name: "index_spina_text_translations_on_locale", using: :btree
+    t.index ["spina_text_id"], name: "index_spina_text_translations_on_spina_text_id", using: :btree
   end
 
   create_table "spina_texts", force: :cascade do |t|
